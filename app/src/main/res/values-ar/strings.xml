@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="games">الالعاب</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="socialities">الاجتماعيات</string>
+    <string name="logOut">تسجيل الخروج</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="products">المنتجات</string>
+
+    <!-- game selected -->
+    <string name="details">  التفاصيل </string>
+    <string name="degrees"> الدرجات :</string>
+    <string name="performance"> الاداء :</string>
+    <string name="play"> العب</string>
+    <!-- login activity -->
+    <string name="login"> تسجيل الدخول</string>
+    <string name="forgot_password"> نسيت كلمة المرور؟</string>
+    <string name="make_account">اصنع حساب</string>
+    <string name="emailLogin">البريد الالكتروني</string>
+    <string name="passwordLogin">كلمة المرور</string>
+    <!-- signup -->
+    <string name="username"> اسم المستخدم :</string>
+    <string name="password">الرقم السري :</string>
+    <string name="repeatPasswrord">اعد كتابة الرقم السري :</string>
+    <string name="date_of_birth">تاريخ الميلاد :</string>
+    <string name="user_type">نوع المستخدم :</string>
+    <string name="player">لاعب</string>
+    <string name="doctor">دكتور</string>
+    <string name="parent">ولى امر</string>
+    <string name="country">الدولة :</string>
+    <string name="email">البريد الالكتروني :</string>
+    <string name="sign_up">تسجيل</string>
+    <!-- profile -->
+    <string name="groups">المجموعات</string>
+    <string name="friends">الاصدقاء</string>
+    <string name="performance_profile">الاداء</string>
+    <!-- group item -->
+    <string name="members">الاعضاء</string>
+    <string name="group_games">العاب المجموعة</string>
+    <string name="performance_groupItem">الاداء</string>
+    <string name="topTen">افضل 10</string>
+    <!-- product item -->
+    <string name="product_details">التفاصيل</string>
+    <string name="buy_product">اشتري المنتج</string>
+
+
+
+</resources>

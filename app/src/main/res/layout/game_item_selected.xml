@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    tools:context="com.example.pc.heroes.GameDetailFragment"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/GameImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/alert_dark_frame"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/GameName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Game name"/>
+            <TextView
+                android:id="@+id/GameHardenss"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Hardness"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+   <TextView
+       android:id="@+id/DetailsTitle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/details"
+       />
+
+    <TextView
+        android:id="@+id/Game_Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dlksld asdlkadms asdlkasd  lksd ldkasl asdkldladk
+        sdlklsdkld"
+        />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#a7a2a2">
+        </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <TextView
+
+        android:id="@+id/Degrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/degrees"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/Performance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/performance"
+        android:layout_weight="1"
+        />
+
+    <ImageView
+
+        android:id="@+id/perfomance_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@android:drawable/sym_def_app_icon"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <Button
+        android:id="@+id/Game_play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:textAllCaps="false"
+        android:text="@string/play"
+
+        />
+    </FrameLayout>
+
+</LinearLayout>
