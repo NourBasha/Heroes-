@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/groupsFragment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:layout_gravity="top"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/type_of_detail_grid_above"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="40sp"-->
+            <!--tools:text="Empty"/>-->
+    <!--</FrameLayout>-->
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#000000"-->
+        <!--/>-->
+
+
+    <GridView
+        android:id="@+id/groupsGridView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="30dp"
+        android:numColumns="2"
+        android:drawSelectorOnTop="true"
+        >
+
+    </GridView>
+
+        <android.support.design.widget.FloatingActionButton
+            app:fabSize="normal"
+            app:elevation="6dp"
+            android:translationZ="12dp"
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:baselineAlignBottom="false"
+            android:src="@drawable/ic_add_white_24dp"
+            />
+
+
+</android.support.design.widget.CoordinatorLayout>

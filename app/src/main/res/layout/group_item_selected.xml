@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="wrap_content"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    >
+    xmlns:tools="http://schemas.android.com/tools">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingBottom="20dp"
+        >
 
 
         <LinearLayout
@@ -18,10 +20,10 @@
             android:layout_margin="10dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:src="@android:drawable/ic_menu_myplaces"/>
+                    android:src="@drawable/ic_group_item"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -51,8 +53,8 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="#FFA7A2A2"></FrameLayout>
+            android:layout_height="1dp"
+            android:background="@color/white"></FrameLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,54 +62,63 @@
             android:text="@string/members"
             android:layout_margin="10dp"
             android:textStyle="bold"
-            android:textColor="@color/abc_primary_text_material_light"
+            android:textColor="@color/textviews"
             />
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:src="@android:drawable/ic_menu_myplaces"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:src="@android:drawable/ic_menu_myplaces"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:src="@android:drawable/ic_menu_myplaces"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:src="@android:drawable/ic_menu_myplaces"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:src="@android:drawable/ic_menu_myplaces"/>
+        <TextView
+            android:id="@+id/GroupMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="group members"
+            android:layout_gravity="center_horizontal"/>
 
 
-        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:src="@android:drawable/ic_menu_myplaces"/>-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:src="@android:drawable/ic_menu_myplaces"/>-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:src="@android:drawable/ic_menu_myplaces"/>-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:src="@android:drawable/ic_menu_myplaces"/>-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:src="@android:drawable/ic_menu_myplaces"/>-->
+
+
+        <!--</LinearLayout>-->
 
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="#FFA7A2A2"></FrameLayout>
+            android:layout_height="1dp"
+            android:background="@color/white"></FrameLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -115,48 +126,55 @@
             android:text="@string/group_games"
             android:layout_margin="10dp"
             android:textStyle="bold"
-            android:textColor="@color/abc_primary_text_material_light"
+            android:textColor="@color/textviews"
             />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/GroupGames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="group games"
+            android:layout_gravity="center_horizontal"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@android:drawable/sym_def_app_icon"
-                android:layout_gravity="center_horizontal|center_vertical"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@android:drawable/sym_def_app_icon"
-                android:layout_gravity="center_horizontal|center_vertical"/>
-            />
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:orientation="horizontal">-->
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@android:drawable/sym_def_app_icon"
-                android:layout_gravity="center_horizontal|center_vertical"/>
-            />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@android:drawable/sym_def_app_icon"
-                android:layout_gravity="center_horizontal|center_vertical"/>
-            />
-        </LinearLayout>
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@android:drawable/sym_def_app_icon"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"/>-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@android:drawable/sym_def_app_icon"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"/>-->
+            <!--/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@android:drawable/sym_def_app_icon"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"/>-->
+            <!--/>-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@android:drawable/sym_def_app_icon"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"/>-->
+            <!--/>-->
+        <!--</LinearLayout>-->
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="#FFA7A2A2"></FrameLayout>
+            android:layout_height="1dp"
+            android:background="@color/white"></FrameLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -164,19 +182,26 @@
             android:text="@string/performance_groupItem"
             android:layout_margin="10dp"
             android:textStyle="bold"
-            android:textColor="@color/abc_primary_text_material_light"
+            android:textColor="@color/textviews"
             />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@android:drawable/dialog_holo_light_frame"
-            />
+        <TextView
+            android:id="@+id/GroupPerformance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="group performance"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:src="@android:drawable/dialog_holo_light_frame"-->
+            <!--/>-->
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="#FFA7A2A2"></FrameLayout>
+            android:layout_height="1dp"
+            android:background="@color/white"></FrameLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -184,13 +209,21 @@
             android:text="@string/topTen"
             android:layout_margin="10dp"
             android:textStyle="bold"
-            android:textColor="@color/abc_primary_text_material_light"
+            android:textColor="@color/textviews"
             />
+
+        <TextView
+            android:id="@+id/GroupTopTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="group top ten"
+            android:layout_gravity="center_horizontal"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -421,8 +454,13 @@
                 android:layout_width="350dp"
                 android:layout_height="2dp"
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:background="#FFA7A2A2"></FrameLayout>
+                android:background="#FFA7A2A2"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="10dp"/>
         </LinearLayout>
-
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"></FrameLayout>
     </LinearLayout>
 </ScrollView>

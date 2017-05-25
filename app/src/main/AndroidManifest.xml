@@ -1,108 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pc.heroes1" >
+    package="com.heroes.pc.heroes1" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".HeroeApplication"
+        android:name="com.heroes.pc.heroes1.HeroesApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="HeRoes"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".authnitication.LogInActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:name="com.heroes.pc.heroes1.authentication.LogInActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".Games_MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:name="com.heroes.pc.heroes1.Games_MainActivity"
+            android:label="HeRoes"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.HOME" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".authnitication.SignUpActivity"
+            android:name="com.heroes.pc.heroes1.authentication.SignUpActivity"
             android:label="@string/title_activity_signUp"
-            android:parentActivityName=".authnitication.LogInActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:parentActivityName="com.heroes.pc.heroes1.authentication.LogInActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".authnitication.SignUpActivity" />
+                android:value="com.heroes.pc.heroes1.authentication.SignUpActivity" />
         </activity>
         <activity
-            android:name=".games.GameDetailActivity"
+            android:name="com.heroes.pc.heroes1.games.GameDetailActivity"
             android:label="@string/title_activity_detail"
-            android:parentActivityName=".Games_MainActivity" >
+            android:parentActivityName="com.heroes.pc.heroes1.Games_MainActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".games.GameDetailActivity" />
+                android:value="com.heroes.pc.heroes1.games.GameDetailActivity" />
         </activity>
         <activity
-            android:name=".profile.ProfileActivity"
+            android:name="com.heroes.pc.heroes1.profile.ProfileActivity"
             android:label="@string/title_activity_profile"
-            android:parentActivityName=".Games_MainActivity" >
+            android:parentActivityName="com.heroes.pc.heroes1.Games_MainActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".profile.ProfileActivity" />
+                android:value="com.heroes.pc.heroes1.profile.ProfileActivity" />
         </activity>
         <activity
-            android:name=".products.ProductActivity"
-            android:label="@string/title_activity_product"
-            android:parentActivityName=".Games_MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".products.ProductActivity" />
-        </activity>
-        <activity
-            android:name=".products.ProductDetailActivity"
-            android:label="@string/title_activity_product_detail"
-            android:parentActivityName=".products.ProductActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".products.ProductDetailActivity" />
-        </activity>
-        <activity
-            android:name=".groups.GroupsActivity"
+            android:name="com.heroes.pc.heroes1.groups.GroupsActivity"
             android:label="@string/title_activity_groups"
-            android:parentActivityName=".Games_MainActivity" >
+            android:parentActivityName="com.heroes.pc.heroes1.Games_MainActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".groups.GroupsActivity" />
+                android:value="com.heroes.pc.heroes1.groups.GroupsActivity" />
         </activity>
         <activity
-            android:name=".groups.GroupDetailActivity"
+            android:name="com.heroes.pc.heroes1.groups.GroupDetailActivity"
             android:label="@string/title_activity_group_detail"
-            android:parentActivityName=".groups.GroupsActivity" >
+            android:parentActivityName="com.heroes.pc.heroes1.groups.GroupsActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".groups.GroupDetailActivity" />
+                android:value="com.heroes.pc.heroes1.groups.GroupDetailActivity" />
         </activity>
         <activity
-            android:name=".socialities.SocialitiesActivity"
+            android:name="com.heroes.pc.heroes1.socialities.SocialitiesActivity"
             android:label="@string/title_activity_socialities"
-            android:parentActivityName=".Games_MainActivity" >
+            android:parentActivityName="com.heroes.pc.heroes1.Games_MainActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".socialities.SocialitiesActivity" />
+                android:value="com.heroes.pc.heroes1.socialities.SocialitiesActivity" />
         </activity>
         <activity
-            android:name=".socialities.SoclalitiesDetailsActivity"
+            android:name="com.heroes.pc.heroes1.socialities.SoclalitiesDetailsActivity"
             android:label="@string/title_activity_socialities_detail"
-            android:parentActivityName=".socialities.SocialitiesActivity" >
+            android:parentActivityName="com.heroes.pc.heroes1.socialities.SocialitiesActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".socialities.SoclalitiesDetailsActivity" />
+                android:value="com.heroes.pc.heroes1.socialities.SoclalitiesDetailsActivity" />
         </activity>
+        <activity
+            android:name="com.heroes.pc.heroes1.games.GameActivity"
+            android:label="Operations"
+            android:parentActivityName="com.heroes.pc.heroes1.Games_MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.heroes.pc.heroes1.games.GameActivity" />
+        </activity>
+        <activity
+            android:name="com.heroes.pc.heroes1.games.GameResultActivity"
+            android:label="Operations"
+            android:parentActivityName="com.heroes.pc.heroes1.games.GameActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.heroes.pc.heroes1.games.GameResultActivity" />
+        </activity>
+
     </application>
 
 </manifest>

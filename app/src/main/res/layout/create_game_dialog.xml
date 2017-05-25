@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="top"
+        android:background="@color/colorAccent"
+        android:elevation="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NewGame"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textSize="30sp"
+            />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/dialogGameName"
+        android:inputType="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/DialogGameName" />
+
+    <EditText
+        android:id="@+id/dialogGameDetails"
+        android:inputType="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/DialogGameDetails" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+
+        >
+
+        <Button
+            android:id="@+id/BTN_cancel_addGame"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="@string/CancelCreatingGame"
+            android:background="@color/brownButtons"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:elevation="2dp"
+            android:layout_gravity="center_horizontal"
+
+            />
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="0dp"></FrameLayout>
+
+        <Button
+            android:id="@+id/BTN_CreateGame"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/brownButtons"
+            android:textColor="@color/white"
+            android:text="@string/CreatGame"
+            android:layout_weight="1"
+            android:elevation="2dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

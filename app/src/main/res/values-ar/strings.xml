@@ -2,6 +2,22 @@
 <resources>
 
 
+
+    <string name="navigation_drawer_open">افتح النافذة الجانبية</string>
+    <string name="navigation_drawer_close">اغلق النافذة الجانبية</string>
+
+    <string name="title_activity_detail">تفاصيل اللعبة</string>
+    <string name="title_activity_profile">الملف الشخصي</string>
+    <string name="title_activity_product">المنتجات</string>
+    <string name="title_activity_product_detail">تفاصيل المنتج</string>
+    <string name="title_activity_groups">المجموعات</string>
+    <string name="title_activity_group_detail">تفاصيل المجموعة</string>
+    <string name="title_activity_socialities">الاجتماعيات</string>
+    <string name="title_activity_socialities_detail"> </string>
+    <string name="title_activity_signUp">تسجيل</string>
+
+
+
     <string name="games">الالعاب</string>
     <string name="profile">الملف الشخصي</string>
     <string name="socialities">الاجتماعيات</string>
@@ -11,7 +27,7 @@
 
     <!-- game selected -->
     <string name="details">  التفاصيل </string>
-    <string name="degrees"> الدرجات :</string>
+    <string name="points"> الدرجات :</string>
     <string name="performance"> الاداء :</string>
     <string name="play"> العب</string>
     <!-- login activity -->
@@ -45,6 +61,44 @@
     <string name="product_details">التفاصيل</string>
     <string name="buy_product">اشتري المنتج</string>
 
+    <string name="NewGroup">مجموعة جديدة</string>
+    <string name="DialogGroupName">اسم المجموعة</string>
+    <string name="DialogDoctorName">اسم الدكتور</string>
+    <string name="CreatGroup">تسجيل المجموعة</string>
+    <string name="CancelCreatingGroup">الغاء</string>
+
+    <string name="Others">اخرى</string>
+
+    <string name="NewGame">لعبة جديدة</string>
+    <string name="DialogGameName">اسم اللعبة</string>
+    <string name="DialogGameDetails">تفاصيل اللعبة</string>
+    <string name="CreatGame">تسجيل اللعبة</string>
+    <string name="CancelCreatingGame">الغاء</string>
+
+    <string name="ContactUs">تواصل معنا</string>
+    <string name="DialogTitle">العنوان</string>
+    <string name="DialogMessage">الرسالة</string>
+    <string name="Submit">ارسال</string>
+    <string name="CancelMessage">الغاء</string>
+
+
+
+    <string name="Accuracy">الدقة</string>
+    <string name="AverageTime">متوسط الوقت</string>
+
+    <string name="PlayAgain">العب مرة اخرى</string>
+    <string name="Exit">خروج</string>
+
+    <string name="Points">النقط :</string>
+<string name="Accuracys">الدقة</string>
+<string name="AverageT">متوسط الوقت :</string>
+<string name="Sec"> ثانية</string>
+
+    <string name="EditPicture">تعديل الصورة</string>
+    <string name="DOB">تاريخ الميلاد</string>
+    <string name="Name">الاسم</string>
+    <string name="Email">البريد الالكتروني</string>
+    <string name="Friends">الاصدقاء</string>
 
 
 </resources>

@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  >
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    tools:context="com.example.pc.heroes.GameDetailFragment"
-
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
 
     <LinearLayout
         android:layout_margin="10dp"
@@ -15,28 +21,31 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/GameImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@android:drawable/alert_dark_frame"
+            android:id="@+id/DetailGameImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:src="@drawable/ic_game_header"
             android:layout_weight="1"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:layout_margin="10dp">
 
             android:layout_weight="1">
             <TextView
                 android:id="@+id/GameName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Game name"/>
+                tools:text=" Game name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
             <TextView
                 android:id="@+id/GameHardenss"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Hardness"/>
+                tools:text=" Hardness"/>
 
         </LinearLayout>
 
@@ -44,26 +53,24 @@
     </LinearLayout>
 
 
-   <TextView
-       android:id="@+id/DetailsTitle"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="@string/details"
-       />
 
     <TextView
         android:id="@+id/Game_Details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="dlksld asdlkadms asdlkasd  lksd ldkasl asdkldladk
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        tools:text="dlksld asdlkadms asdlkasd  lksd ldkasl asdkldladk
         sdlklsdkld"
+        android:textAppearance="?android:textAppearanceMedium"
         />
 
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="#a7a2a2">
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff">
         </FrameLayout>
 
 
@@ -73,47 +80,181 @@
         android:orientation="vertical">
 
 
-    <TextView
 
-        android:id="@+id/Degrees"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/degrees"
-        android:layout_margin="10dp"
-        android:layout_weight="1"
-        />
+        <TextView
+            android:id="@+id/Degrees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/points"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
 
-    <TextView
-        android:id="@+id/Performance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/performance"
-        android:layout_weight="1"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
 
-    <ImageView
+                <ProgressBar
+                    android:id="@+id/PointsProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:max="10000"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/brown_progress"
+                    />
 
-        android:id="@+id/perfomance_scale"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:src="@android:drawable/sym_def_app_icon"/>
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/GamePoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Point"
+                android:layout_gravity="center_horizontal|center_vertical"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ffffff">
+            </FrameLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Accuracy"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textStyle="bold"
+                android:layout_weight="2"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+
+                <ProgressBar
+                    android:id="@+id/AccuracyProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:max="100"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/brown_progress"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/GameAccuracyPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="percentage"
+                android:layout_gravity="center_horizontal|center_vertical"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ffffff">
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/AverageTime"
+                 android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textStyle="bold"
+                android:layout_weight="2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+
+                <ProgressBar
+                    android:id="@+id/AverageTimeProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:max="100"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/brown_progress"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/GameSeconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Seconds"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sec"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    />
+
+            </LinearLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ffffff">
+            </FrameLayout>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+
     <Button
         android:id="@+id/Game_play_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal|bottom"
         android:textAllCaps="false"
         android:text="@string/play"
+        android:background="@color/brownButtons"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/activity_horizontal_margin"
 
         />
-    </FrameLayout>
 
 </LinearLayout>
+
+</ScrollView>

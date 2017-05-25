@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#506af9</color>
-    <color name="colorPrimaryDark">#3146be</color>
-    <color name="colorAccent">#8998e7</color>
-    <color name="buttons">#97a7fa</color>
-    <color name="textviews">#97a7fa</color>
-    <color name="white">#d0d7fa</color>
+    <!--<color name="colorPrimary">#5b74ff</color>-->
+    <!--<color name="colorPrimaryDark">#3851da</color>-->
+    <!--<color name="colorAccent">#8998e7</color>-->
+    <color name="colorPrimary">#f9b96a</color>
+    <color name="colorPrimaryDark">#ef9d38</color>
+    <color name="colorAccent">#fcc27a</color>
+    <color name="buttons">#d7d7fd</color>
+    <color name="hints">#ffc37e</color>
+    <color name="brownButtons">#ffa948</color>
+    <color name="RadioButtons">#ffa948</color>
+    <color name="editTxtWritingColor">#d67500</color>
+    <color name="editTxtBackgroundTNT">#d3ff8b00</color>
+    <!--<color name="textviews">#97a7fa</color>-->
+    <color name="textviews">#FFFFC37E</color>
+    <color name="white">#ffffff</color>
+    <color name="loginBackground">#FFF3E0</color>
+
+    <color name="login">#6f7aaf</color>
+    <color name="floating_action_button_color">#ff8b00</color>
+    <color name="recyclerView_color">#dde2ff</color>
+
 
 
 

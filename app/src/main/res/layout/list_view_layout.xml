@@ -21,14 +21,16 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#000000"></FrameLayout>
-
+        android:background="@color/white"></FrameLayout>
 
     <ListView
         android:id="@+id/socialities_list_view_Details"
+        android:scrollbars="vertical"
+        android:clickable="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        />
 
-    </ListView>
+
 
 </LinearLayout>
